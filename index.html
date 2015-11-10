@@ -3,41 +3,56 @@
 
 <head>
      <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="css/style.css" />
      <title>le bon coin</title>
 </head>
 
 <body>
      <div class="conteneur">
           <header>
-               <img src="img/logo.png" alt="logo" />
+               <img id="logo" src="img/logo.png" alt="logo" />
                <aside>
                     <p>
                          Leboncoin.fr part d'une idée simple : la bonne affaire est au coin de la rue ! Pour passer ou chercher des annonces, cliquez sur la région de votre choix et trouvez la bonne affaire parmi 26 585 806 annonces.
                     </p>
                </aside>
           </header>
+          <div class="divfilet">
 
-          <hr />
-          <!--filet-->
 
-          <p>simple, rapide eet efficace</p>
+               <hr />
+               <!--filet-->
 
-          <img src="img/bouton.png" alt="bouton" />
+               <p id="filet"> simple, rapide et efficace</p>
+          </div>
 
-          <div class="carte"></div>
+          <img id="bouton" src="img/bouton.png" alt="bouton">
 
-          <nav>
-               <ul>
-                    <li><a href="#">Nord </a></li>
-                    <li><a href="#">Sud </a></li>
-                    <li><a href="#">Est </a></li>
-                    <li><a href="#">Ouest </a></li>
-                    <li><a href="#">Milieu </a></li>
-               </ul>
-          </nav>
+          <div class="carte">
+               <img id="carte" src="img/carte.png" usemap="#carterose" alt="carte de France" />
+               <map name="carterose" id="carterose">
+                    <area shape="rect" coords="586,548,588,550" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+                    <area alt="Lien vers le Nord" title="Nord" href="#" shape="poly" coords="189,140,172,80,252,92,297,11,334,2,408,67,347,175" style="outline:none;" target="_self" />
+                    <area alt="Lien vers L'est" title="Est" href="http://www.image-maps.com/" shape="poly" coords="396,63,339,201,394,265,464,317,515,323,554,117" style="outline:none;" target="_self" />
+                    <area alt="Lien vers l'Ouest" title="Ouest" href="#" shape="poly" coords="145,114,268,212,230,344,181,357,155,242,97,185,49,141" style="outline:none;" target="_self" />
+                    <area alt="Lien vers le Milieu" title="Milieu" href="#" shape="poly" coords="185,136,257,241,190,344,177,400,508,351,435,253,310,185" style="outline:none;" target="_self" />
+                    <area alt="Lien vers le Sud" title="Sud" href="#" shape="poly" coords="162,411,524,356,558,465,574,533,324,496,147,439" style="outline:none;" target="_self" />
+               </map>
+               <nav>
+                    <ul>
+                         <li><a href="#">Nord </a></li>
+                         <li><a href="#">Sud </a></li>
+                         <li><a href="#">Est </a></li>
+                         <li><a href="#">Ouest </a></li>
+                         <li><a href="#">Milieu </a></li>
+                    </ul>
+               </nav>
+          </div>
+
+
 
           <footer>
-               <img src="bas" alt="ours" />
+               <img id="ours" src="img/bas.png" alt="ours" />
           </footer>
 
 
